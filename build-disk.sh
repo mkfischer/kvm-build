@@ -6,7 +6,7 @@ set -e
 : "${BIN_KVM:=$(type -P kvm)}"
 
 # get parameters
-RAM_SIZE=${1:-"1024"}
+RAM_SIZE=${1:-"2048"}
 DISK_SIZE=${2:-"8G"}
 DISK_FORMAT=${3:-"qcow2"}
 SSH_PUBLIC_KEY_FILE=${4:-"$HOME/.ssh/id_rsa.pub"}
